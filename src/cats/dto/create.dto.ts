@@ -1,7 +1,6 @@
 import {
     IsNotEmpty,
     IsNumber,
-    IsOptional,
     IsString,
   } from 'class-validator';
   
@@ -11,7 +10,7 @@ import {
     name: string;
   
     @IsNumber()
-    @IsOptional()
+    @IsNotEmpty()
     age: number;
   
     @IsString()

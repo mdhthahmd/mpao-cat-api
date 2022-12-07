@@ -15,6 +15,7 @@ import {
     name: string;
   
     @IsNumber()
+    @IsNotEmpty()
     age: number;
   
     @IsString()
